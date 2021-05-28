@@ -1,0 +1,61 @@
+body {
+    background-image: url("https://img.freepik.com/vector-gratis/fondo-liso-estilo-papel_23-2148964104.jpg?size=626&ext=jpg");
+    background-repeat: no-repeat;
+    background-size:100% 100%;
+    background-attachment: fixed;}
+
+html,body{
+    margin:0;
+    padding:0;}
+
+body{
+    width:90%;
+    height:90px;
+font-family:'Times New Roman';
+} 
+
+.title{text-align:center;
+font-size:40px;
+color:#dd2232;
+margin-top:100px;
+font-weight: 100;}
+
+.container{width: 100%;
+max-width: 1200px;
+height: 430px;
+display:flex;
+flex-wrap:wrap;
+justify-content: center;
+margin: auto;}
+
+.container .card{
+    width: 30%;
+    height: 430px;
+    border-radius: 10px;
+    box-shadow: 0 2px 2px rgba(7, 223, 61, 0.877);
+    overflow: hidden;
+    margin: 20px;
+    text-align: center;
+    transition: all 0.25s;
+  
+}
+
+.container .card:hover{
+    box-shadow: 0 2px 2px rgb(213, 6, 240);
+    transform: translateY(-15px);
+}
+
+.container .card img{
+    width: 330px;
+    height: 220px;
+}
+
+ .container .card h4{font-weight: 600;}
+ .container .card p{
+     padding: 0 irem;
+     font-size: 16px;
+    font-weight: 300;}
+
+.container.card a{font-weight: 500;
+text-decoration: none;
+color: #3498db;}
