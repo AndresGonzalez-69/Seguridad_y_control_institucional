@@ -1,0 +1,342 @@
+*{
+ padding: 0%;
+ margin: 0%;    
+}
+:root{
+    --transform:translate(-1000px);
+    --background: rgb(1, 48, 255);
+}
+body{
+    background: rgb(177, 177, 241);
+    height: auto;
+    
+}
+/*-------------------------------------------------Menu de navegacion-------------*/
+nav{
+    float: right;
+    margin: auto 0;
+    width: 50%;
+    /*max-width: 90%;*/
+    height: 0px;
+    
+}
+nav ul{
+    list-style: none;
+}
+nav > ul {
+    display:table;
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+    font-size: 15px;
+    height: 100%;
+    
+}
+nav > ul li{
+    display: table-cell;
+}
+/*sub menu*/
+nav > ul > li:hover > ul {
+    width: 100%;
+    display: block;
+    height: 100%;
+    opacity: 0.5;
+    transition: opacity 1s, box-shadow 1s;
+    transform: scale(1,1);
+
+}
+
+nav > ul > li > ul {
+    display: none;
+}
+
+
+nav > ul li a{
+    color: white;
+    display: block;
+    line-height: 20px;
+    padding: 10px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .13s ease;
+}
+nav > ul >li >ul >li a:hover{
+    background: rgba(33, 175, 231, 0.356);
+}
+/*COntinuacion de menu de navegacion */
+nav >ul >li > a span{
+    background: #1744595d;
+    display: block;
+    height: 40px;
+    width: 100%;
+    left: 0;
+    position: absolute;
+    top: -35px;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+}
+
+nav > ul > li > a:hover > span{
+    top: 0;
+}
+
+nav > ul > li > ul:hover{
+    opacity: 1;
+    transform: scale(1.1,1.1);
+    transition: opacity 1s,box-shadow 1s,transform 1s;
+}
+
+/*
+nav > ul > li > ul li{
+    float: right;
+    display: block;
+    width: 50%;
+}
+*/
+nav > ul > li > #opHor li {
+    display: block;
+}
+
+/*----------------------------------*/
+nav >ul >li > a span .fas{
+    display: block;
+    line-height: 40px;
+    color: aqua;
+}
+nav >ul >li > a span .fab {
+    display: block;
+    line-height: 40px;
+    color: aqua;
+}
+nav >ul >li > a span  .far{
+    display: block;
+    line-height: 40px;
+    color: aqua;
+}
+nav >ul >li > a:hover > span{
+    top: 0;
+
+}
+
+
+nav h2{
+    font-size: 40px;
+    text-align: center;
+    line-height: 2px;
+    color: #fff;
+ }
+/*colores de logos*/
+.min1 {
+    color: #fff;
+}
+nav ul li a .primero {
+    background: rgb(5, 3, 100);
+}
+nav ul li a .segundo {
+    background: #6d9bf1;
+}
+nav ul li a .tercero{
+    background: rgb(5, 3, 100);;
+}
+nav ul li a .cuarto{
+    background: #6d9bf1;
+}
+/*------------Encabezado------------------------------------------------*/
+header{
+    height:auto;
+    overflow: hidden;
+    
+}
+#tras{
+    background:rgba(5, 27, 22, 0.651) ;
+    width: 100%;
+    height: 40px;
+    position: absolute;
+
+}
+#cajaheader{
+    background: url(../IMG/posiblefondo.jpg);
+    width: 100%;
+    height: 40px;
+    position: absolute;
+}
+#logo{
+    margin-top: 50px;
+    display: inline;
+    position: absolute;
+    right: 10px;
+    
+}
+h1{
+    text-align: center;
+    color: white;
+}
+
+
+h2{
+    margin-top: 16px;
+    margin-bottom: 7px;
+    text-align: center;
+    padding: 5px;
+    color: #000;
+    font-size: 40px;
+
+}
+footer{
+    text-align: center;
+   /* background:url(../IMG/foother.jpg);*/
+}
+/*---------formularios----------------------------------------------------------------*/
+
+.pre-inicial{
+
+   position: absolute;
+   margin-top: 5%;
+    margin-left: 33%;
+    margin-right: auto;
+    width: 700px;
+    height: 450px;
+    opacity: 1;
+    transition: opacity 1s,box-shadow 1s,transform 1s;
+}
+.post-inicial{
+    position: absolute;
+    opacity: 0.5;
+    transition: opacity 1s, box-shadow 1s;
+    transform: var(--transform);
+}
+.pre-indi{
+   position: absolute;
+   width: 0px;
+   height: 0px;
+   margin-left: auto;
+   margin-right: auto;
+   background: cyan;
+   transform: translateY(-1000px);
+   opacity: 0.5;
+   transition: opacity 1s, box-shadow 1s;
+}
+
+.post-indi{
+    position: absolute;
+    margin-top: 5%;
+    margin-left: 35%;
+    margin-right: auto;
+    width: 700px;
+    height: 450px;
+    z-index: 1;
+    opacity: 1;
+    transition: opacity 1s,box-shadow 1s,transform 1s;
+}
+
+.pre-grupo{
+   position: absolute;
+   width: 0px;
+   height: 0px;
+   margin-left: auto;
+   margin-right: auto;
+   background: rgb(47, 0, 255);
+   transform: translateY(-1000px);
+   opacity: 0.5;
+   transition: opacity 1s, box-shadow 1s;
+}
+.grupal-selec{
+    position: absolute;
+    margin-top: 5%;
+    margin-left: 35%;
+    margin-right: auto;
+    z-index: 1;
+    opacity: 1;
+    transition: opacity 1s,box-shadow 1s,transform 1s;
+}
+
+/*-----------------------------stilosFormularios---------------------------*/
+.borde{
+    border: 1px solid #000;
+    border-radius: 10px 10px 10px ;
+    width: 400px;
+    height: 250px;
+    padding: 20px;
+    
+}
+fieldset{
+   margin-left: auto;
+   margin-right: auto;
+    border-radius: 10px 10px 10px ;
+    width: 400px;
+    height: 250px;
+}
+/*---------stFormilario inicio------------*/
+.pre-inicial>div>fieldset > input{
+
+    text-align: center;
+    width: 300px;
+    height: 50px;
+    padding: 5px;
+    margin-left: 13%;
+    margin-top: 10%;
+}
+.pre-inicial>div>fieldset > input:hover{
+    background: aqua;
+    box-shadow: 0px 20px 50px 5px;
+    transform: scale(1.1,1.1);
+    transition: opacity 1s,box-shadow 1s,transform 1s;
+
+}
+/*---------stFormularioIndividual---------------------------*/
+.post-indi>div>fieldset>form>select{
+    margin-left: 30%;
+    width: 155px;
+}
+.post-indi>div>fieldset>form>label{
+    margin-left: 30%;
+}
+.post-indi>div>fieldset >form>input{
+    width: 150px;
+    margin-left: 30%;
+}
+button{
+    border-radius: 10px 0px 10px 0px;
+    margin-left: 30px;
+    width: 100px;
+    padding: 3px;
+    
+}
+button:hover{
+    background: aqua;
+    box-shadow: -3px 10px 20px 1px;
+    transition: box-shadow 1s;
+}
+#generarindi{
+    
+    margin-left: 130px;
+}
+/*----------------------stFormilarioGrupo-----------------------------------------------------------------------------------*/
+.grupal-selec>div>fieldset>form>select{
+    margin-left: 30%;
+    width: 155px;
+    margin-bottom: 15px;
+}
+.grupal-selec>div>fieldset>form>label{
+    margin-left: 30%;
+    padding-bottom: 15px;
+
+    
+}
+.grupal-selec>div>fieldset >form>input{
+    width: 150px;
+    margin-left: 30%;
+    margin-bottom: 15px;
+}
+#btnGenerarGrupo{
+    margin-left: 130px;
+}
+

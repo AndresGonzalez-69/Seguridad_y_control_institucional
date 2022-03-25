@@ -1,0 +1,52 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+body{
+    background: rgb(177, 177, 241);
+    height: auto;
+}
+
+h1{
+    color: brown;
+    text-align: center;
+    font-size: 50px;
+    padding-top: 10%;
+}
+h2{
+    text-align: center;
+    color: brown;
+}
+table {
+    margin-left: auto;
+    margin-right: auto;
+    width: 600px;
+    border: solid 1px #000;
+    background: white;
+}
+th{
+    border: solid 1px #000;
+    border-radius: 5px 5px 0px 0px;
+    background: coral;
+}
+td{
+    text-align: center;
+    border: solid 1px #000;
+}
+input{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 100px;
+    height: 30px;
+    border-radius: 0px 0px 10px 10px;
+}
+a{
+    text-decoration: none;
+}
+#apodo{
+    text-align: center;
+    color: brown;
+}
