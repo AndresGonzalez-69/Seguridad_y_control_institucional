@@ -1,0 +1,33 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recuperar Contraseña</title>
+    <link rel="stylesheet" href="Estil.css">
+</head>
+
+<body>
+  <div class="divlogin">
+    <div class="divcont">
+      <fieldset>
+        <h1>Recuperar Contraseña</h1><br>  
+        <P> Digite su correo de verificación o el número de celular que registró al
+            momento de registrarse en la plataforma. llegará un código de 6 dígitos 
+            para restablecer su contraseña.</P><br>
+            <form action="restablecer11.php" method="POST">
+            <input type="number"  placeholder="documento" name="documento" >
+            <input type="submit" value="Generar" name="btngenerar"> 
+          </form> 
+          <form action="restablecer11.php" method="POST">
+            <input type="texto"  placeholder="codigo" name="codigo" required >
+            <input type="submit" value="Verificar" name="btnverificar"> 
+          </form> 
+            <h1><a href="../../index.html" style="float:left">Volver</a></h1>
+          
+          </fieldset>
+     </div>
+  </div>
+</body>
+</center>
+</html>
