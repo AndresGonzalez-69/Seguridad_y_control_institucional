@@ -1,0 +1,307 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background:rgba(178, 200, 218, 0.39);
+    height: auto;
+
+    
+}
+
+/*--------------------------------------Encabezado------------------------------------------------*/
+header{
+    height:100px;
+    overflow: hidden;
+
+}
+
+#logo1{
+    margin-top:70px;
+    display: inline;
+    position: absolute;
+    right: 205px;
+    
+}
+#logo2{
+    margin-top:70px;
+    display: inline;
+    position: absolute;
+    left: 200px;
+    
+}
+h1{
+    margin-top: 50px;
+    inline-size: auto;
+    text-align: center;
+}
+
+section{
+    height: auto;
+}
+footer{
+    text-align: center;
+    /*background:url(../../IMG/foother.jpg);*/
+    height: 20px;
+}
+
+fieldset{
+    border: #333 solid 1px;
+    border-radius: 10px 10px 10px 10px ;
+    padding: 10px;
+}
+/*--------------------------------------------Foto de perfil de formulario-----------------------------------*/
+.DivFperfil{
+    text-align: center;
+    margin-bottom: 2px;
+    overflow: hidden;
+}
+.a1{
+    margin-bottom: 10px;
+    width: 50%;
+    background:coral ;
+    border: 0px; 
+    border-radius: 0px 0px 5px 5px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.a2{
+    width: 50%;
+    height: 50px; 
+    border: 0px; 
+    border-radius: 5px 5px 0px 0px ; 
+    text-align: center;
+    background: #fff;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    
+}
+#FperfilE{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    opacity: 0;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+}
+
+#FperfilD{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    opacity: 0;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    
+}
+
+.texPerfil{
+    margin-top: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    font-style: italic;
+    font-size: 15px;
+}
+
+/*-------------------------------------------------------------------------------------------------------*/
+input{ 
+    width: 100%;
+    height: 30px; 
+    margin: 1px; 
+    border: 0px; 
+    border-radius: 5px; 
+    text-align: center;
+}
+select{ 
+    width: 100%;
+    height: 30px; 
+    margin: 1px; 
+    border: 0px; 
+    border-radius: 5px; 
+    text-align: center;
+}
+[required] {
+	border-color: green;
+	box-shadow: 0px 0px 5px rgba(0, 128, 0, 0.952);
+}
+
+input:invalid {
+	border-color: rgb(155, 16, 16);
+	box-shadow: 0px 5px 5px rgb(158, 12, 12);
+}
+#btnregistrar{  
+    margin: auto; 
+    padding: 5px;
+    background: rgb(109, 96, 96);
+    color:#fff;
+    border-radius: 5px;
+}
+#btnregistrar:hover{
+    transition: 1s;
+    background: #333;
+}
+#btnregistrarEstudiante{  
+    margin: auto; 
+    padding: 5px;
+    background: rgb(109, 96, 96);
+    color:#fff;
+    border-radius: 5px;
+}
+#btnregistrarEstudiante:hover{
+    transition: 1s;
+    background: #333;
+}
+button{
+    background: coral;
+    width: 100px;
+    padding: 5px;
+    margin-top: 5px;
+}
+/*-------------Division de los Article-------------------*/
+article{
+    
+    display:table;
+
+}
+#Doce{
+    width: 33%;
+    height: 100%;
+    display: table-cell;
+    background:transparent;
+    text-align: center;
+    font-size: 40px;
+    text-decoration: none;
+    color: black;
+    
+    
+}
+#Estu{
+    width: 35%;
+    height: 100%;
+    background: transparent;
+    display: table-cell;
+    text-align: center;
+    font-size: 40px;
+    text-decoration: none;
+    color: black;
+
+}
+#Adm{
+    width: 35%;
+    height: 100%;
+    text-align: center;
+    background: transparent;
+    font-size: 40px;
+    text-decoration: none;
+    color: black;
+
+}
+a{
+    margin-left: 70%;
+    margin-top: 5000px;
+    text-decoration: none;
+    color: black;
+    border: solid grey 1px;
+    background: coral;
+    
+}
+/*-------------Formularios----------------------------------*/
+
+:root{
+    --transform:translate(-1000px);
+    --background: rgb(1, 48, 255);
+}
+/*Inicio------------------*/
+
+#inicio>div>input:hover{
+    background: rgba(3, 45, 80, 0.534);
+}
+#inicio{
+    padding: 30px;
+    
+}
+#inicio>div>input{
+    font-size: 20px;
+    width: 200px;
+    height: 50px;
+    background: coral;
+}
+.pre-inicio{
+    border: 1px solid rgb(77, 77, 82);
+    width: 800px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 1;
+    transition: opacity 1s,box-shadow 1s,transform 1s;
+
+}
+.post-inicio{
+    position: absolute;
+    opacity: 0.5;
+    transition: opacity 1s, box-shadow 1s;
+    transform: var(--transform);
+}
+/*---------Secretaria------------*/
+.prDocente{
+
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    background: cyan;
+    transform: translateY(-2000px);
+    opacity: 0.5;
+    transition: opacity 1s, box-shadow 1s;
+}
+
+.psDocente{
+    padding: 30px;
+    width: 500px;
+    height: auto;
+    margin-right: auto;
+    margin-left: auto;
+    z-index: 1;
+    opacity: 1;
+    transition: opacity 1s,box-shadow 1s,transform 1s;
+}
+
+/*------------ForSegudridad----------------*/
+.prEstudiante{
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    background: cyan;
+    transform: translateY(-1500px);
+    opacity: 0.5;
+    transition: opacity 1s, box-shadow 1s;
+}
+
+
+.psEstudiante{
+    padding: 30px;
+    width: 500px;
+    height: auto;
+    margin-right: auto;
+    margin-left: auto;
+    z-index: 1;
+    opacity: 1;
+    transition: opacity 1s,box-shadow 1s,transform 1s;
+}

@@ -1,0 +1,216 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="stlo.css">
+        <title>Registrar</title>
+    </head>
+<body>
+
+        <header >
+            <h1>Formulario de registro</h1>
+            
+        </header>
+        <div id="logo1">
+            <img src="../../IMG/Logo1_0.png" alt="" width="170px" height="auto">
+        </div>
+        <div id="logo2">
+            <img src="../../IMG/PosibleLogo.png" alt="" width="170px" height="auto">
+        </div>
+
+    <section>
+        <article id="inicio" class="pre-inicio">
+            <!------------------------------------------------------------------------>
+            <div id="Estu">
+                 <input type="button"  id="ClikEstudiante" value="Estudiante">
+             </div>
+            <!------------------------------------------------------------------------>
+             <div id="Doce">
+                  <input type="button" id="ClicDocente" value="Docente"> 
+             </div> 
+            <!------------------------------------------------------------------------>
+         </article>
+         <a href="../../index.html" >Volver</a>
+    <br>
+    <!-------------------------------------------------------------------------------------------------------------------------->
+    <article id="Estudiante" class="prEstudiante">
+        <fieldset>
+            <form action="registro.php"  method="POST" enctype="multipart/form-data">
+                
+                <legend><h5>Registrar </h5></legend>
+                <div class="DivFperfil">
+                    
+                    <div class="a2">
+                        <h6 id="nombreE"></h6><br>
+                       <p>Foto de perfil</p><p style="font-style: italic; color: brown;">(click para subir archivos)</p>
+                       <input type="file" name="Pimg" id="FperfilE" required>
+                    </div>
+                    <div class="a1">
+                        <p class="texPerfil">Recuerde que la imagen debe ser con fondo azul o blanco enfocando de forma nítida el rostro </p>
+                    </div>
+                </div>
+            
+            <input type="text" placeholder="documento_id" name="documento_id" required>
+            <br><br>
+            <select name="t_d_documento" id="">
+                <option value="">Tipo de documento</option>
+                <option value="TI">TI</option>
+                <option value="cc">CC</option>
+                
+            </select>
+            <br><br>
+            <input type="text" placeholder="nombre" name="nombre" required>
+            <br><br>
+            <input type="text" placeholder="apellido" name="apellido" required>
+            <br><br>
+            <input type="text" placeholder="telefono" name="telefono" required>
+            <br><br>
+            <input type="text" placeholder="direccion" name="direccion" required>
+            <br><br>
+            <select name="idSede" id="">
+
+                <option value="">Id Sede</option>
+                <option value="32">32</option>
+                
+            </select>
+            <br><br>
+            <select name="idJornada" id="" required>
+
+                <option value="">id Jornada</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                
+            </select>
+            <br><br>
+            <input type="text" placeholder="correo" name="correo" required>
+            <br><br>
+            
+            <select name="curso" id="" required>
+
+                <option value="">Curso</option>
+                <option value="601">601</option>
+                <option value="602">602</option>
+                <option value="701">701</option>
+                <option value="702">702</option>
+                <option value="801">801</option>
+                <option value="802">802</option>
+                <option value="901">901</option>
+                <option value="902">902</option>
+                <option value="1001">1001</option>
+                <option value="1002">1002</option>
+                <option value="1101">1101</option>
+                <option value="1102">1102</option>
+                
+                
+            </select>
+            
+            <br><br>
+            <input type="password" placeholder="&#128274 clave" name="clave" required>
+            <br><br>
+            
+            <input type="submit" value="Registrar" name="btnregistrarEstudiante" id="btnregistrarEstudiante">
+            <br>
+            </form> 
+            <button id="btnAtrasEstudiante">Atras</button>
+            
+        </fieldset>
+        
+
+    </article>
+<!-------------------------------------------------------------------------------------->
+    <article id="Docente" class="prDocente">
+        <fieldset>
+            <form action="registro.php"  method="POST" enctype="multipart/form-data">
+                <div class="DivFperfil">
+                    
+                    <div class="a2">
+                        <h6 id="nombreD"></h6><br>
+                       <p>Foto de perfil</p><p style="font-style: italic; color: brown;">(click para subir archivos)</p>
+                       <input type="file" name="PimgD" id="FperfilD" required>
+                    </div>
+                    <div class="a1">
+                        <p class="texPerfil">Recuerde que la imagen debe ser con fondo azul o blanco enfocando de forma nítida el rostro </p>
+                    </div>
+                </div>
+                <input type="text" placeholder="documento_id" name="documento_id" required>
+                <br><br>
+                <select name="t_d_documento" id="">
+                    <option value="">Tipo de documento</option>
+                    <option value="CE">CE</option>
+                    <option value="CC">CC</option>
+                    
+                </select>
+                <br><br>
+                <input type="text" placeholder="nombre" name="nombre" required>
+                <br><br>
+                <input type="text" placeholder="apellido" name="apellido" required>
+                <br><br>
+                <input type="text" placeholder="telefono" name="telefono" required>
+                <br><br>
+                <input type="text" placeholder="direccion" name="direccion" required>
+                <br><br>
+                <select name="idSede" id="">
+    
+                    <option value="">id Sede</option>
+                    <option value="32">32</option>
+                    
+                </select>
+                <br><br>
+                <select name="idJornada" id="" required>
+    
+                    <option value="">Jornada</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    
+                </select>
+                <br><br>
+                <input type="text" placeholder="correo" name="correo" required>
+                <br><br>
+                <select name="idRol" id="" required>
+    
+                    <option value="">Rol</option>
+                    <option value="Docente">Docente</option>
+                    <option value="Orientación">Orientación</option>
+                    <option value="Secretaria">Secretaria</option>
+                    <option value="Seguridad">Seguridad</option>
+                    <option value="Sgenerales">Sgenerales</option>
+                    
+                </select>
+                <br><br>
+                <input type="password" placeholder="&#128274 clave" name="clave" required>
+                <br><br>
+                <input type="text" placeholder="Código asignado por la institución" name="codigo" required>
+                <br><br>
+                
+                <input type="submit" value="Registrar" name="btnregistrar" id="btnregistrar">
+                <br>
+            </form>  
+            <button id="btnAtrasDocente">Atras</button>
+            
+        </fieldset>
+
+    </article>
+        
+    </section>
+    <footer>
+        <h6>
+       (c) copyright -Año 2021-Contactos:_--andcgonzalez111@misena.edu.co--diacburgos@misena.edu.co--ykpaez6@misena.edu.co--_
+       </h6>
+  </footer>
+</body>
+<script type="text/javascript" src="./java.js"></script> 
+<script>
+    let archivoE = document.querySelector('#FperfilE');
+    archivoE.addEventListener('change',()=>{
+        document.querySelector('#nombreE').innerText = archivoE.files[0].name;
+    });
+
+    let archivoD = document.querySelector('#FperfilD');
+    archivoD.addEventListener('change',()=>{
+        document.querySelector('#nombreD').innerText = archivoD.files[0].name;
+    });
+</script>
+</html>

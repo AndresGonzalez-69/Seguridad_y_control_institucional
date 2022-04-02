@@ -1,0 +1,439 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+#FontPag{
+    background: rgba(178, 200, 218, 0.39);
+    
+    height: 945px;
+    
+    background: rgba(11, 96, 165, 0.39);
+    background-size: cover;
+}
+body{
+    background: url(./Img/font.png) no-repeat;
+    background-size: cover;
+    object-fit: cover;
+    height: auto;
+}
+/*-------------------------------------------------Menu de navegacion-------------*/
+nav{
+    float: right;
+    margin: auto 0;
+    width: 50%;
+    /*max-width: 90%;*/
+    height: 0px;
+    
+}
+nav ul{
+    list-style: none;
+}
+nav > ul {
+    display:table;
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+    font-size: 15px;
+    height: 100%;
+    
+}
+nav > ul li{
+    display: table-cell;
+}
+/*sub menu*/
+nav > ul > li > ul {
+    display:none;
+    overflow:hidden;
+    width: 150px;
+}
+
+nav > ul > li:hover > ul {
+    display: block;
+    height: 50px;
+    opacity: 0.5;
+    transition: opacity 1s, box-shadow 1s;
+    transform: scale(1,1);
+    background: rgb(0, 139, 0);
+}
+nav > ul > li > ul:hover{
+    opacity: 1;
+    transform: scale(1.1,1.1);
+    transition: opacity 1s,box-shadow 1s,transform 1s;
+    background: rgb(221, 9, 9);
+
+}
+nav > ul > li > ul a{
+    width: 100%;
+    margin-left: 0px;
+}
+
+/*COntinuacion de menu de navegacion */
+nav > ul li a{
+    color: white;
+    display: block;
+    line-height: 20px;
+    padding: 10px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .13s ease;
+}
+nav > ul >li >ul >li a:hover{
+    background: rgba(231, 106, 33, 0.356);
+}
+nav >ul >li > a span{
+    background: #1744595d;
+    display: block;
+    height: 42px;
+    width: 100%;
+    left: 0;
+    position: absolute;
+    top: -35px;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+}
+nav >ul >li > a span .fas{
+    display: block;
+    line-height: 40px;
+    color: aqua;
+}
+nav >ul >li > a span .fab {
+    display: block;
+    line-height: 40px;
+    color: aqua;
+}
+nav >ul >li > a span  .far{
+    display: block;
+    line-height: 40px;
+    color: aqua;
+}
+nav >ul >li > a:hover > span{
+    top: 0;
+
+}
+
+
+nav h2{
+    font-size: 40px;
+    text-align: center;
+    line-height: 2px;
+    color: #fff;
+ }
+/*colores de logos*/
+.min1 {
+    color: #fff;
+}
+nav ul li a .primero {
+    background: rgb(5, 3, 100);
+}
+nav ul li a .segundo {
+    background: #6d9bf1;
+}
+nav ul li a .tercero{
+    background: rgb(5, 3, 100);;
+}
+nav ul li a .cuarto{
+    background: #6d9bf1;
+}
+/*------------Encabezado------------------------------------------------*/
+header{
+    height:200px;
+    overflow: hidden;
+
+}
+#tras{
+    background:rgba(5, 27, 22, 0.651) ;
+    width: 100%;
+    height: 42px;
+    position: absolute;
+
+}
+#cajaheader{
+    background: url(../../IMG/posiblefondo.jpg);
+    width: 100%;
+    height: 42px;
+    position: absolute;
+}
+#logo{
+    margin-top:70px;
+    display: inline;
+    position: absolute;
+    right: 10px;
+    
+}
+h1{
+    margin-top: 150px;
+    text-align: center;
+    font-size: 40px;
+}
+
+section{
+    height: 435px;
+}
+footer{
+    text-align: center;
+    /*background:url(../../IMG/foother.jpg);*/
+    height: 20px;
+    bottom: 30px;
+}
+fieldset{
+    padding: 10px;
+}
+article>fieldset>li>a{
+    color: rgb(53, 51, 51);
+}
+article>fieldset>li>a:hover{
+    color: rgb(23, 20, 220);
+}
+/*-------------Division de los Article-------------------*/
+article{
+    
+    display: table;
+
+}
+#pAdmi{
+    width: 33%;
+    height: 100%;
+    display: table-cell;
+    background:transparent;
+    text-align: center;
+    font-size: 40px;
+    text-decoration: none;
+    color: black;
+
+}
+#pAcad{
+    width: 35%;
+    height: 100%;
+    background: transparent;
+    display: table-cell;
+    text-align: center;
+    font-size: 40px;
+    text-decoration: none;
+    
+
+}
+
+/*-------------Formularios----------------------------------*/
+input{
+    width: 90px;
+    background:rgb(250, 251, 252);
+    border-radius: 15%;
+    height: 40px;
+    position: relative;
+    padding: 5px;
+    border: 1px solid black;
+    box-shadow: black  0px 0px 5px 1px;
+}
+:root{
+    --transform:translate(-1000px);
+    --background: rgb(1, 48, 255);
+}
+/*Inicio------------------*/
+
+#inicio>div>input:hover{
+    background: rgba(3, 45, 80, 0.534);
+}
+#inicio{
+    padding: 30px;
+    
+}
+#inicio>div>input{
+    font-size: 20px;
+    width: 250px;
+    height: 50px;
+    background-color: rgb(124, 180, 245);
+}
+.pre-inicio{
+   /* border: 1px solid rgb(77, 77, 82);
+    border-radius:5% ;*/
+    width: 800px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 1;
+    transition: opacity 1s,box-shadow 1s,transform 1s;
+    /*background: url(https://as2.ftcdn.net/v2/jpg/02/80/69/27/1000_F_280692767_M5iVFReQayFn9bvEPrvEw0FYvYu4Tx7f.jpg);
+    */
+}
+.post-inicio{
+    position: absolute;
+    opacity: 0.5;
+    transition: opacity 1s, box-shadow 1s;
+    transform: var(--transform);
+}
+/*--------------------------------------Administrativo-----------------------------------------------*/
+#pAdministrativo>div>a>input:hover{
+    background: rgba(3, 45, 80, 0.534);
+}
+
+#pAdministrativo>div>a>input{
+    font-size: 20px;
+    width: 200px;
+    height: 50px;
+    background-color: rgb(124, 180, 245);
+}
+
+.pre-Administrativo{
+
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    background: cyan;
+    transform: translateY(-1000px);
+    opacity: 0.5;
+    transition: opacity 1s, box-shadow 1s;
+    
+}
+
+.post-Administrativo{
+   /* border: 1px solid rgb(77, 77, 82);*/
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+   /* margin-left: 35%;
+    margin-right: auto;
+    position: absolute;*/
+    height: auto;
+    z-index: 1;
+    opacity: 1;
+    transition: opacity 1s,box-shadow 1s,transform 1s;
+    
+}
+/* --------------------------------------Input de Administrativos------------------------------------------------- */
+#pAdministrativo{
+    padding: 0px;
+    border: transparent;
+    display: table;
+    width: 60%;
+    height: 40%;
+    position:center;
+    margin-top:10px
+    
+ }
+ #Admi{
+     width: 40%;
+     height: auto;
+     display: table-cell;
+     background:transparent;
+     text-align: center;
+     font-size: 50px;
+     text-decoration: none;
+     color: black;
+     /*background: url(https://as2.ftcdn.net/v2/jpg/02/80/69/27/1000_F_280692767_M5iVFReQayFn9bvEPrvEw0FYvYu4Tx7f.jpg);
+     background-size: cover;*/
+     border-radius: 5px;
+ }
+ #seguridad{
+     width: 40%;
+     height: 60%;
+     background: transparent;
+     display: table-cell;
+     text-align: center;
+     font-size: 50px;
+     text-decoration: none;
+     color: black;
+     /*background: url(https://as2.ftcdn.net/v2/jpg/02/80/69/27/1000_F_280692767_M5iVFReQayFn9bvEPrvEw0FYvYu4Tx7f.jpg);*/
+     background-size: cover;
+     border-radius: 5px;
+    }
+ #SerGenerales{
+     width: 30%;
+     height: auto;
+     text-align: center;
+     background: transparent;
+     font-size: 40px;
+     text-decoration: none;
+     color: black;
+     /*background: url(https://as2.ftcdn.net/v2/jpg/02/80/69/27/1000_F_280692767_M5iVFReQayFn9bvEPrvEw0FYvYu4Tx7f.jpg);*/
+ }
+ /*---------------------------------------Academicos---------------------------------------------------*/
+ .pre-Academico{
+     position: absolute;
+     width: 10px;
+     height: 0px;
+     margin-left: auto;
+     margin-right: auto;
+     background: cyan;
+     transform: translateY(-1000px);
+     opacity: 0.5;
+     transition: opacity 1s, box-shadow 1s;
+ }
+ 
+ .post-Academico{
+ 
+    /* border: 1px solid rgb(24, 24, 209);*/
+     width: 700px;
+     margin-left: auto;
+     margin-right: auto;
+     margin-top: 5%;
+    /* margin-left: 35%;
+     margin-right: auto;
+     position: absolute;*/
+     height: 75px;
+     z-index: 1;
+     opacity: 1;
+     transition: opacity 1s,box-shadow 1s,transform 1s;
+    /* background: url(https://as2.ftcdn.net/v2/jpg/02/80/69/27/1000_F_280692767_M5iVFReQayFn9bvEPrvEw0FYvYu4Tx7f.jpg);*/
+     background-size: cover;
+     border-radius: 10px;
+ }
+ #Academico>div>div>a>input:hover{
+     background: rgba(3, 45, 80, 0.534);
+ }
+ 
+ #Academico>div>div>a>input{
+     font-size: 20px;
+     width: 250px;
+     height: 50px;
+     background: rgb(80, 135, 255);
+ }
+/* ------------------------input de academicos----------------- */
+#doce{
+    width: 20%;
+    height: 100%;
+    display: table-cell;
+    background:transparent;
+    text-align: center;
+    font-size: 40px;
+    text-decoration: none;
+    color: black;
+    
+}
+
+#Estudiante{
+    width: 15%;
+    height: 100%;
+    background: transparent;
+    display: table-cell;
+    text-align: center;
+    font-size: 40px;
+    text-decoration: none;
+    color: black;
+}
+.home{
+    display: flex;
+    flex-wrap: wrap;
+}
+.in-flex{
+flex: 1;
+min-width: 200px;
+}
+/*.in-flex:first-child{
+    flex: 2;
+    padding: 25px;
+    margin-bottom: 0px;
+}*/
+.in-flex div{
+padding: 25px;
+}
